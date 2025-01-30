@@ -1,3 +1,5 @@
+import scroll from "./scroll.js";
+window.onscroll = scroll;
 const letters = [...document.querySelectorAll('#logo-container>h1')]; // array of letters (LME)
 const logocontainer = document.querySelector('#logo-container');
 // configure logo

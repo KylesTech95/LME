@@ -11,4 +11,7 @@
     .logo-img{
         animation: none;
     }
+    #logo-container:hover{
+        width:170px;
+    }
 }
