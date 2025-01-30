@@ -1,0 +1,14 @@
+@media screen and (max-width:890px) {
+    #logo-container:hover{
+        color:#000;
+        background:#fff;
+        cursor:pointer;
+    }
+    .invert-bg{
+        border-radius: 12px;
+        background:transparent;
+    }
+    .logo-img{
+        animation: none;
+    }
+}

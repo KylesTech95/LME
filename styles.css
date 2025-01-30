@@ -9,5 +9,125 @@
 
 body{
     background:beige;
+    width:100%;
+    height:100%;
 }
 
+/* hide an element */
+.no-display{
+    opacitY:0;    
+}
+
+/* wrapper */
+#wrapper{
+width:100%;
+height:100%;
+/* border:2px solid green; */
+/* background:rgb(25, 0, 255); */
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+header{
+    width:100%;
+    height:170px;
+    /* background:red; */
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background-image: linear-gradient(90deg,#fff 25%,transparent 50%);
+}
+.header-hr{
+    width:100px;
+    border:none;
+    border-radius: 20px;
+    height:.25px;
+    background:rgb(0, 0, 0);
+    margin-top:1.5rem;
+}
+.logo-link{
+    height:100%;
+    /* border:2px solid red; */
+    color:#000;
+}
+#logo-container{
+    width:170px;
+    height:100%;
+    left:0;
+    overflow: hidden;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+    border-right:none;
+    border-left: none;
+    background:#fff;
+}
+#logo-container:hover{
+    color:#fff;
+    background:#000;
+    cursor:pointer;
+}
+.invert-bg{
+    border-radius: 12px;
+    background:beige;
+}
+.logo-img{
+    position:absolute;
+    top:40px;
+    transform:scale(.5);
+    animation: rotateArrows 2s .75s forwards alternate;
+}
+@keyframes rotateArrows {
+    0%{
+        transform:scale(.5);
+    }
+    25%{
+        transform:scale(.75) rotate(15deg);
+
+    }
+    50%{
+        transform:scale(.5) rotate(0deg);
+
+    }
+    75%{
+        transform:scale(.75) rotate(-15deg);
+
+    }
+    100%{
+        transform:scale(.5) rotate(0deg);
+
+    }
+}
+#logo-container>h1{
+    position:absolute;
+    top:-10px;
+    font-size: 60px;
+    font-family: "Inter", serif;
+    font-style:unset;
+    font-weight: 400;
+    transition: .25s;
+}
+#logo-container>p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .75s;
+    margin-top:.75rem;
+}
+
+.ll{
+left: 5px;
+}
+.lm{
+left: 58px;
+}
+.le{
+left: 125px;
+
+}
