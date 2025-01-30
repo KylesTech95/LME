@@ -146,7 +146,7 @@ left: 125px;
 
 
 #space{
-    height:3000px
+    height:100%;
 }
 
 /* scroll past header */
@@ -156,4 +156,10 @@ left: 125px;
 .logo-container-scroll-down{
     color:#fff;
     background: #000;
+}
+
+#space>p{
+    font-size:18px;
+    padding:.5rem;
+    text-align: left;
 }
