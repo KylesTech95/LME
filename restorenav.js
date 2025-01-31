@@ -7,6 +7,7 @@ const logo = {
     container:document.getElementById('logo-container')
 }
 export default function restoreNav(){
+    logo.img.classList.remove('to-right')
     logo.img.classList.remove('no-display')
     logo.para.classList.remove('no-display')
     header.classList.remove('reduced-height')

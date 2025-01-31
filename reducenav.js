@@ -6,7 +6,8 @@ const logo = {
     container:document.getElementById('logo-container')
 }
 export default function reduceNav(){
-    logo.img.classList.add('no-display')
+    // logo.img.classList.add('no-display')
+    logo.img.classList.add('to-right')
     logo.para.classList.add('no-display')
     header.classList.add('reduced-height')
     header.classList.remove('regular-height')

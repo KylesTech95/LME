@@ -82,40 +82,27 @@ header{
     border-right:none;
     transition: .25s;
     border-left: none;
-}
-.logo-start{
-    background:#fff;
+    background:transparent;
 }
 .invert-bg{
     border-radius: 12px;
     background:transparent;
 }
-.logo-img{
+.logo-img,.ps-logo{
     position:absolute;
-    top:40px;
-    transform:scale(.5);
+}
+.logo-img{
+    top:50px;
+    width:95px;
     animation: rotateArrows 2s .75s forwards alternate;
 }
-@keyframes rotateArrows {
-    0%{
-        transform:scale(.5);
-    }
-    25%{
-        transform:scale(.75) rotate(15deg);
-
-    }
-    50%{
-        transform:scale(.5) rotate(0deg);
-
-    }
-    75%{
-        transform:scale(.75) rotate(-15deg);
-
-    }
-    100%{
-        transform:scale(.5) rotate(0deg);
-
-    }
+.to-right{
+    position:fixed;
+    left:200px;
+    top:0px;
+}
+.ps-logo{
+top:30px;
 }
 #logo-container>h1{
     position:absolute;
